@@ -1,10 +1,10 @@
 {
   "name": "angular-aws",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "ng build --prod --build-optimizer --optimization",
+    "build": "ng build --configuration production --build-optimizer --optimization",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --watch=false --code-coverage --no-progress --browsers=ChromeHeadlessCI",
     "testLocal": "ng test"
