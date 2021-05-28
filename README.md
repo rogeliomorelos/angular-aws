@@ -1,5 +1,11 @@
 # AngularAws
 
+This project is a PoC to try Github Actions with two workflows:
+- Build, Lint and Test on PR
+- Build and Deploy on Merge - The deployment is done with AWS S3 and Cloudfront 
+
+The workflows include caching of node_modules to improve efficiency on "npm install" step. 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
 
 ## Development server
@@ -16,7 +22,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io) on a HeadlessCI Chrome.
+
+Run `npm run testLocal` to execute the unit tests via [Karma](https://karma-runner.github.io) on Chrome with GUI.
+
 
 ## Running end-to-end tests
 
